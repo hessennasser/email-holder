@@ -52,7 +52,6 @@ window.addEventListener("load", () => {
 
 let getEmail = () => {
     emails.forEach(ele => {
-        console.log(ele);
         var requestOptions = {
             method: 'GET',
             redirect: 'follow'
@@ -62,7 +61,6 @@ let getEmail = () => {
             .then(response => response.json())
             .then(result => {
                 ele.addEventListener("click", () => {
-                    console.log(result);
                     emailHolder.innerHTML = "";
                     let listItem = document.createElement("li");
                     listItem.classList.add("email");
