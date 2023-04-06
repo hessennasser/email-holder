@@ -36,7 +36,7 @@ let getAllEmails = () => {
                     <p class="user">${email.name}</p>
                     <p class="email">${email.email}</p>
                 `;
-                allEmails.appendChild(listItem);
+                allEmails.prepend(listItem);
             }
             emails = document.querySelectorAll(".left-side ul li");
         })

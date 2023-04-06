@@ -60,3 +60,5 @@ form.addEventListener('submit', function (event) {
             btn.disabled = false;
         });
 });
+
+window.addEventListener("load", checkLogin())
